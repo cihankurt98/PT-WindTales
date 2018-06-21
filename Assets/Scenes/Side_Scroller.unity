@@ -1245,6 +1245,7 @@ MonoBehaviour:
   deviceType: 1
   blowthreshold: 10
   inBlowZone: 0
+  comString: COM17
 --- !u!1 &1219563245
 GameObject:
   m_ObjectHideFlags: 0

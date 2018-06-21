@@ -2217,7 +2217,7 @@ Prefab:
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: itemPickup
       value: 
-      objectReference: {fileID: 8300000, guid: 94fa2e35661485049a7d087bb7a89d0f, type: 3}
+      objectReference: {fileID: 8300000, guid: 031aa2fdb9d4e0b4196f7d6487b4df08, type: 3}
     - target: {fileID: 11400002, guid: 0e7ee4df08df88c4880f43398f9ad2c2, type: 2}
       propertyPath: win
       value: 
@@ -2986,6 +2986,7 @@ MonoBehaviour:
   coinScript: {fileID: 636435434}
   win: {fileID: 8300000, guid: 7444312d0efedb34280dda8c2eb8e257, type: 3}
   winMusic: {fileID: 495128609}
+  comport: COM17
 --- !u!4 &862628958
 Transform:
   m_ObjectHideFlags: 0

@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ClockManager : MonoBehaviour
 {
     public Image image;
+    [SerializeField]
+    private string comPort;
     public float time = 60;
     float updatedTime;
     public PlayerController2DRocket rocket;
@@ -14,7 +16,9 @@ public class ClockManager : MonoBehaviour
     void Awake()
     {
         updatedTime = time;
+        DeviceManager.portName = comPort;
     }
+
 
 	void Update ()
     {

@@ -1040,9 +1040,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickUpSound: {fileID: 8300000, guid: 3fa8ca69a6ee22f40a95aac0d4f5f81b, type: 3}
-  launchSound: {fileID: 8300000, guid: 315ed121204fb7644bd14702737d8487, type: 3}
+  launchSound: {fileID: 8300000, guid: ca38cffda32e7734c9dde36279b78256, type: 3}
   endSound: {fileID: 8300000, guid: ca2496ece9393d943911e838a8b5ef90, type: 3}
-  springTick: {fileID: 8300000, guid: 368602f55fb224045b70cbae5c77d378, type: 3}
+  springTick: {fileID: 8300000, guid: 255f3bc5e185b264f974f84aab992d47, type: 3}
   wind: {fileID: 2070727047}
   bgMusic: {fileID: 177575415}
 --- !u!82 &177575415
@@ -2711,6 +2711,7 @@ MonoBehaviour:
   am: {fileID: 177575414}
   gm: {fileID: 444611623}
   difficulty: 0
+  comPort: COM17
 --- !u!54 &631862052
 Rigidbody:
   m_ObjectHideFlags: 0

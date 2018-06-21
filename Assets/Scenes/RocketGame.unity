@@ -549,7 +549,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 899655484}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 51a89ff55f2e4be4ba319f776ba9f3e1, type: 3}
@@ -634,8 +634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 291ffe2d78d214249b0ddc7f144a94a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinCollectSound: {fileID: 0}
-  MagnetSuctionSound: {fileID: 0}
+  CoinCollectSound: {fileID: 8300000, guid: 3fa8ca69a6ee22f40a95aac0d4f5f81b, type: 3}
+  MagnetSuctionSound: {fileID: 8300000, guid: 8fdc0a8e2f9ddd3468545215e8b3f559, type: 3}
   BackgroundMusic: {fileID: 899655490}
 --- !u!1 &995082188
 GameObject:
@@ -1476,6 +1476,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1955385079}
+  comPort: COM17
   time: 60
   rocket: {fileID: 1649735897}
   coinSpawner: {fileID: 119699363}

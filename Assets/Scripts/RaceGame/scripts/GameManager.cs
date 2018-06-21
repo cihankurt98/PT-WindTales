@@ -16,6 +16,14 @@ public class GameManager : MonoBehaviour {
     public CoinScript coinScript;
     public AudioClip win;
     public AudioSource winMusic;
+    [SerializeField]
+    private string comport;
+
+
+    void Awake()
+    {
+        DeviceManager.portName = comport;
+    }
 
 
 	// Use this for initialization

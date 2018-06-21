@@ -59,6 +59,14 @@ public class jumpScript : MonoBehaviour
     [Header("Difficulty - max 10")]
     public int difficulty;
 
+    [SerializeField]
+    private string comPort;
+
+    void Awake()
+    {
+        DeviceManager.portName = comPort;
+    }
+
 
     void Start()
     {
