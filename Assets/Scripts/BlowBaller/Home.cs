@@ -7,6 +7,7 @@ public class Home : MonoBehaviour
 {
     public void ToHub()
     {
+        Physics.gravity = GameMaster.instance.getStartGravity();
         SceneManager.LoadScene(0);
     }
 }

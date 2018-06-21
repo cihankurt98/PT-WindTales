@@ -12,7 +12,7 @@ public class GameStand : TappableObject
     public string Name;
     public string GameScene;
     public Sprite Thumbnail;
-    [Range(1, 15)] public int MaxDailyPlayCount;
+    [Range(1, 150)] public int MaxDailyPlayCount;
     public GameStand PreviousGame;
 
     public Popup ClosedPopup;

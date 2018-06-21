@@ -31,6 +31,7 @@ public class GameMaster : MonoBehaviour
     private Vector3 ballThrowSpeed;
     [SerializeField]
     private Vector3 ballGravity;
+    private Vector3 startGravity;
     [Header("Meter settings")]
     [SerializeField]
     private Slider slider;
@@ -68,6 +69,7 @@ public class GameMaster : MonoBehaviour
         }
 
         DeviceManager.portName = portNameForKueffner;
+        startGravity = Physics.gravity;
     }
 
     void Start()
@@ -91,6 +93,10 @@ public class GameMaster : MonoBehaviour
         updateSlider();
     }
 
+    public Vector3 getStartGravity()
+    {
+        return startGravity;
+    }
     public float getBasketSpeed()
     {
         if (basketSpeed < 0) // negatieve waardes: basket andere kant op, verdwijnd uit beeld
