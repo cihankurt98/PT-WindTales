@@ -21,10 +21,14 @@ public class MagnetOrbit : MonoBehaviour
     bool isPressedRight = false;
     float rotateSpeed = 100;
     Transform test;
+    [SerializeField]
+    private string comPort;
+
 
     void Awake()
     {
         DeviceManager.Instance.SetDeviceType(deviceType);
+        DeviceManager.portName = comPort;
     }
     void Start()
     {

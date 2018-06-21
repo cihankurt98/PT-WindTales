@@ -9,12 +9,12 @@ public class AudioManagerRocketGame : MonoBehaviour {
 
     public void PlayCoinCollect()
     {
-        AudioSource.PlayClipAtPoint(CoinCollectSound, transform.position);
+        //AudioSource.PlayClipAtPoint(CoinCollectSound, transform.position);
     }
 
     public void PlayMagnetSound()
     {
-        AudioSource.PlayClipAtPoint(MagnetSuctionSound, transform.position);
+        //AudioSource.PlayClipAtPoint(MagnetSuctionSound, transform.position);
     }
 
     public void PlayBackgroundMusic()

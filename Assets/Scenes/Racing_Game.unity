@@ -2761,7 +2761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6599efdfc664a5840a4558f90b8f2347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviceType: 1
+  deviceType: 3
 --- !u!4 &810349456
 Transform:
   m_ObjectHideFlags: 0
@@ -2984,9 +2984,9 @@ MonoBehaviour:
   RaceTime: {fileID: 1995819283}
   Money: {fileID: 672341802}
   coinScript: {fileID: 636435434}
-  win: {fileID: 8300000, guid: 7444312d0efedb34280dda8c2eb8e257, type: 3}
+  win: {fileID: 8300000, guid: 2d1a7795251864e4d97ca3b62817843c, type: 3}
   winMusic: {fileID: 495128609}
-  comport: COM17
+  comport: COM3
 --- !u!4 &862628958
 Transform:
   m_ObjectHideFlags: 0

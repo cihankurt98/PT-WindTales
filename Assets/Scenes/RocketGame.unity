@@ -758,9 +758,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be60c90ef7085ad47959aeb40632046e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deviceType: 1
+  deviceType: 3
   flowRate: 0
   inhaleThreshold: 0
+  comPort: COM3
 --- !u!58 &1170948419
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1476,7 +1477,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1955385079}
-  comPort: COM17
   time: 60
   rocket: {fileID: 1649735897}
   coinSpawner: {fileID: 119699363}

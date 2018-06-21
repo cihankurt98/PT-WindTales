@@ -121,6 +121,7 @@ public class USBSpiroController : SpiroController
                         cleanFlow = Convert.ToDouble(data[0]);
                         flow = cleanFlow * flowMultiplier;
 						DeviceManager.Instance.FlowLMin = (flow / 78.123f);
+                        //Debug.Log(DeviceManager.Instance.FlowLMin);
                     }
                     catch (FormatException ex)
                     {

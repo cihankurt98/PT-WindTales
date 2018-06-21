@@ -34,6 +34,7 @@ public class CoinSuction : MonoBehaviour
 
     void Suction()
     {
+        Debug.Log(GetComponent<MagnetOrbit>().flowRate);
         if (GetComponent<MagnetOrbit>().flowRate < -50)
         {
             float step = speed * Time.deltaTime;
