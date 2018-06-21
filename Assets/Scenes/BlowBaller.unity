@@ -9725,13 +9725,13 @@ MonoBehaviour:
   basketSpeed: 0
   movingBasket: 1
   ball: {fileID: 1462896136}
-  ballThrowSpeed: {x: 0, y: 90, z: 50}
+  ballThrowSpeed: {x: 0, y: 90, z: 60}
   ballGravity: {x: 0, y: -50, z: 0}
   slider: {fileID: 766043574}
   ruisValue: 10
   minimumValueArrow: {fileID: 1010054778}
   arrowSpeed: 1
-  deviceType: 3
+  deviceType: 1
   portNameForKueffner: COM17
   SettingsActiveOnStart: 0
   panel: {fileID: 1825709145}

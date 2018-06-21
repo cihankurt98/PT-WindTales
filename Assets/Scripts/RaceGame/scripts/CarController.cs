@@ -84,6 +84,13 @@ namespace UnityStandardAssets.Vehicles.Car
 
             m_Rigidbody = GetComponent<Rigidbody>();
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
+
+            waypoints = new GameObject[WayPoint.wayPoints.Length];
+
+            for (int i = 0; i < waypoints.Length; i++)
+            {
+                waypoints[i] = WayPoint.wayPoints[i].gameObject;
+            }
         }
 
         private void FixedUpdate()
@@ -426,15 +433,6 @@ namespace UnityStandardAssets.Vehicles.Car
 
         }
 
-        private void Update()
-        {
-            waypoints = new GameObject[WayPoint.wayPoints.Length];
-
-            for (int i = 0; i < waypoints.Length; i++)
-            {
-                waypoints[i] = WayPoint.wayPoints[i].gameObject;
-            }
-        }
 
         private void OnTriggerEnter(Collider other)
         {
@@ -449,12 +447,9 @@ namespace UnityStandardAssets.Vehicles.Car
                     StartCoroutine(WaitForActivation());
                     break;
                 case "Finish":
-                    // AudioSource.PlayClipAtPoint(win, transform.position);
-                    
                     manager.EndGame();
                     break;
                 default:
-                   // Debug.Log("default");
                     break;
             }
 
