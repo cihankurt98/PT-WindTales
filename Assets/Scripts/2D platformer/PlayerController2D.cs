@@ -41,11 +41,15 @@ public class PlayerController2D : MonoBehaviour
     private double blowthreshold = 10f;
     public bool inBlowZone;
 
+    [SerializeField]
+    private string comString = "COM7";
+
     private void Awake()
     {
         if (useExternalController)
         {
             //setting up the controller
+            DeviceManager.portName = comString;
             DeviceManager.Instance.SetDeviceType(deviceType);
         }
 
@@ -72,15 +76,19 @@ public class PlayerController2D : MonoBehaviour
                     flowRate *= -1;
                 }
             }
-
-            if (CrossPlatformInputManager.GetButton("Jump"))
-            {
-                flowRate = 199;
-            }
             else
             {
-                flowRate = 0;
+                if (CrossPlatformInputManager.GetButton("Jump"))
+                {
+                    flowRate = 199;
+                }
+                else
+                {
+                    flowRate = 0;
+                }
             }
+
+            
 
             if (m_Grounded && flowRate >= blowthreshold)
             {
