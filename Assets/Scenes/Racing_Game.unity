@@ -2986,7 +2986,7 @@ MonoBehaviour:
   coinScript: {fileID: 636435434}
   win: {fileID: 8300000, guid: 2d1a7795251864e4d97ca3b62817843c, type: 3}
   winMusic: {fileID: 495128609}
-  comport: COM3
+  comport: COM17
 --- !u!4 &862628958
 Transform:
   m_ObjectHideFlags: 0

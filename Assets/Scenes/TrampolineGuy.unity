@@ -2711,7 +2711,7 @@ MonoBehaviour:
   am: {fileID: 177575414}
   gm: {fileID: 444611623}
   difficulty: 0
-  comPort: COM3
+  comPort: COM17
 --- !u!54 &631862052
 Rigidbody:
   m_ObjectHideFlags: 0
